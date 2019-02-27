@@ -130,7 +130,7 @@
       <li>
         <div class='user-view'>
           <div class='background'>
-            <img src='img/img4.jpg'>
+            <img src='img/img1.jpg'>
           </div>
           <a href="#!"> 
             <img class='circle' src='img/img5.jpg'>
@@ -160,9 +160,22 @@
         <a class='waves-effect' href='#!'>Logout</a>
       </li>
     </ul>
-    <a href='#!' data-activates='slide-out' class='button-collapse'></a>
-      <i class='material-icons'>menu</i>
+    <a href='#!' data-activates='slide-out' class='button-collapse'>
+      <i class='material-icons yellow blue-text large circle '>person</i>
     </a>
+
+    <!-- <ul class='side-nav' id='mauricio'>
+      <li>
+        <a href="#">Home on the side</a>
+      </li>
+      <li>
+        <a href="#">About on the side</a>
+      </li>
+      <li>
+        <a href="#">Contact on the side</a>
+      </li>
+    </ul> -->
+
 
 
     <!-- END HERE -->
@@ -175,6 +188,10 @@
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+ 
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
   <script>
@@ -187,16 +204,15 @@
       });
 
       // JAVASCRIPT START HERE //
-      $('.button-collapse').sideNav({
-         menuWidth: 300,
-         edge: 'left',
-         closeOnClick: false,
-         draggable: true,
-         onOpen: function(){console.log('Menu Open')},
-         onClose: function(){ console.log('Menu Closes')}
+
+        $('.button-collapse').sideNav({
+          menuWidth: 300,
+          edge: 'left',
+          closeOnClick: false,
+          draggable: true,
+          onOpen: function(){console.log('Menu Open')},
+          onClose: function(){ console.log('Menu Closes')}
       });
-
-
 
     });
   </script>
