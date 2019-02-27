@@ -117,8 +117,12 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div> 
     <!-- ./ MENU ROW END -->
+    <br>
+    <br>    
+    <br>
+    <br>    
     <br>
     <br>
 
@@ -144,7 +148,7 @@
     </div> -->
 
     <!-- FULL WIDTH CAROUSEL -->
-    <!-- <div class='carousel carousel-slider data-indicators='true'>
+    <div class='carousel carousel-slider' data-indicators='true'>
         <a class='carousel-item' href="#one!">
           <img src="img/img5.jpg">
         </a>
@@ -160,10 +164,10 @@
         <a class='carousel-item' href="#five!">
           <img src="img/img8.jpg">
         </a>
-      </div> -->
+      </div>
 
     <!-- CONTENT SLIDER -->
-    <div class='carousel carousel-slider center' data-indicators='true'>
+    <!-- <div class='carousel carousel-slider center' data-indicators='true'>
       <div class='carousel-item red white-text' href="#one!">
         <h2>Panel One</h2>
         <p>This is panel one</p>
@@ -192,7 +196,7 @@
           <a class='btn black'>button</a>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- END HERE -->
@@ -208,25 +212,37 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
 
   <script>
+//  document.addEventListener('DOMContentLoaded', function () {
+//     var carouselElems = document.querySelector('.carousel.carousel-slider');
+//     var carouselInstance = M.Carousel.init(carouselElems, {
+//         fullWidth: true,
+//         indicators: true
+//     });
+//     function moveNextCarousel() {
+//         var elems = document.querySelector('.carousel.carousel-slider');
+//         var moveRight = M.Carousel.getInstance(elems);
+//         moveRight.next(1);
+//     }
+//     function movePrevCarousel() {
+//         var elems = document.querySelector('.carousel.carousel-slider');
+//         var moveLeft = M.Carousel.getInstance(elems);
+//         moveLeft.prev(1);
+//     }
+// });
+
+
     $(document).ready(function () {
       $('.dropdown-button').dropdown({
         constrainWidth: false,
         hover: true,
         belowOrigin: true,
         alignment: 'left'
-      });
+     });
 
-      // JAVASCRIPT START HERE //
-
-      // $('.carousel').carousel();
+  //     // JAVASCRIPT START HERE //
+  //     // $('.carousel').carousel();
       $('.carousel-slider').carousel({ fullWidth: true });
-
-      // const car = document.getElementByClassName('carousel');
-      var parentDOM = document.getElementById("carousel");
-      console.log(parentDOM);
-      // .carousel();
-
-    });
+  });
   </script>
 </body>
 
